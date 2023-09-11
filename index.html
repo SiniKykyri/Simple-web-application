@@ -1,12 +1,212 @@
 <!DOCTYPE>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <title>Koiruuksien koiruus</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+            html{
+                font-family: "Lucida Sans", sans-serif;
+            }
+            .header{
+                background-color: #9933cc;
+                color: #ffffff;
+                padding: 15px;
+            }
+            .menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu li{
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: #33b5e5;
+                color: #ffffff;
+                font-size: 20px;
+            }
+            .menu li:hover{
+                background-color: #0099cc;
+            }
+            .aside{
+                background-color: #33b5e5;
+                padding: 15px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 14px;
+                width: 25%;
+                float: left;
+            }
+            .footer{
+                background-color: #0099cc;
+                color: #ffffff;
+                text-align: center;
+                font-size: 12px;
+                padding: 15px;
+            }   
+            /* For mobile phones: */
+            [class*="col-"]{
+                width: 100%;
+            }
+            @media only screen and (min-width: 600px){
+                /* For tablets: */
+                .col-s-1{
+                    width: 8.33%;
+                }
+                .col-s-2{
+                    width: 16.66%;
+                }
+                .col-s-3{
+                    width: 25%;
+                }
+                .col-s-4{
+                    width: 33.33%;
+                }
+                .col-s-5{
+                    width: 41.66%;
+                }
+                .col-s-6{
+                    width: 50%;
+                }
+                .col-s-7{
+                    width: 58.33%;
+                }
+                .col-s-8{
+                    width: 66.66%;
+                }
+                .col-s-9{
+                    width: 75%;
+                }
+                .col-s-10{
+                    width: 83.33%;
+                }
+                .col-s-11{
+                    width: 91.66%;
+                }
+                .col-s-12{
+                    width: 100%;
+                }
+                @media only screen and (min-width: 768px){
+                  /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+                }
+            }
+        </style>
     </head>
-    <body><h1>Moikka!</h1>
-        <p>Miten koodaus sujuu??</p>
-        <img src="assets/pictures/dog.png" alt="koiruli">
+
+    <header id="header-background">
+        <h1>Koiruuksien koiruus</h1>
+        <div class="logo"></div>
+    
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="rotutesti.html">Rotutesti</a></li>
+            <li><a href="omistajatesti.html">Omistajatesti</a></li>
+        </ul>
+    </nav>
+    
+    <body>
+        <h2>Sinustako koiran omistaja?</h2>
+        <h3>Tervetuloa! </h3>
+        <p>Oletko miettinyt koiran hankintaa, mutta haluat vielä varmistuksen päätöksellesi? Tämä sivusto tarjoaa sinulle hyödyllistä tieto koiran hankintaan liittyen. Tarjoamme sinulle nyt räätälöidyn rotutestin sekä testin minkälainen koiranomistaja olisit. Tarjoamme myös nimi generaattorin. </p>
+        <p><br></p>
+      
+        <form>
+            <label for ="name">Etunimi</label>
+            <input type="text" id="firstname" name="Firstname"><br>
+            <label for ="email">Sukunimi</label>
+            <input type="text" id="lastname" name="Lastname"><br>
+            <input type="radio" id="finnish" name="language" value="finnish">
+            <label for="finnish">Suomi</label><br>
+            <input type="radio" id="english" name="language" value="english">
+            <label for="english">Englanti</label><br>
+            <input type="checkbox" id="Kokemus" name="Kokemus" value="On kokemusta">
+            <label for="Kokemus">On aikaisempaa kokemusta koirista</label><br>
+            <input type="checkbox" id="Ei kokemusta" name="Ei kokemusta" value="Ei kokemusta">
+            <label for="Ei kokemusta">Ei ole aikaisempaa kokemusta koirista</label><br>
+            <input type="submit" value="Lähetä"><br>
+            <table>
+                <tr>
+                    <th>Määrä Suomessa</th>
+                    <th>Rotu</th>
+                    <th>Alkuperämaa</th>
+                </tr>
+                <tr>
+                    <td>11000</td>
+                    <td>Islanninlammaskoira</td>
+                    <td>Islanti</td>
+                </tr>
+                <tr>
+                    <td>5500</td>
+                    <td>Lapinporokoira</td>
+                    <td>Suomi</td>
+                </tr>
+            </table>
+        </form>
+        <artucle>
+            <h2>Tämä on testi artikkeli:</h2>
+            <p>Tässä testi artikkelissa höpötellään jotainkin koirista..... </p>
+        <time>
+            <p> Tässä on time tagi: Päivitetty 10.9.2023</p>
+        </time>
+        <aside>
+            <h2>Tässä on aside tagi:</h2>
+            <p>Tässä on aside tagi: Tässä on jotain asiaa koirista. </p>
+        </aside>
+        <details>
+            <summary>Tässä on details tagi:</summary>
+            <p>Tässä on details tagi: Tässä on jotain asiaa koirista. </p>
+        </details>
+        <figure>
+            <img src="assets/pictures/dog.png" alt="koiruli">
+            <figcaption>Tässä on figure tagi: Koiruli</figcaption> 
+        </figure>
+        <main>
+            <h2>Tässä on main tagi:</h2>
+            <p>Tässä on main tagi: Tässä on jotain asiaa koirista. </p>
+        </main>
+        <div>
+            <h2>Tässä on div tagi:</h2>
+            <p>Tässä on div tagi: Tässä on jotain asiaa koirista. </p>
+        </div>
+        <mark>
+            <p>Tässä on mark tagi: Tässä on jotain asiaa koirista. </p>
+        </mark>
+        <section>
+            <h2>Tässä on section tagi:</h2>
+            <p>Tässä on section tagi: Tässä on jotain asiaa koirista. </p>
+        </section>
+        <summary>
+            <p>Tässä on summary tagi: Tässä on jotain asiaa koirista. </p>
+        </summary>
+        <footer>
+            <p>Tässä on footer: Yhteystiedot: Sinin koirasivut 1234, Koirakuja 1, 12345 Koirala</p>
+        
     </body>
 </html>
