@@ -161,8 +161,28 @@ input[type="submit"]:hover{
 br{
     margin-top: 10px;
 }
+@keyframes example{
+    from {background-color: rgb(240, 244, 252);}
+    to {background-color: #ddd;}
+}
 
+.buttonspace{
+    text-align: center;
+    
+}
+.buttonspace button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
 
+.buttonspace button:hover{
+    background-color: #0056b3;
+}
 @media (max-width: 768px){
     #navigation li{
         display: block;
