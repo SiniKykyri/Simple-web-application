@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .body{
     background-color: rgb(254, 255, 255);
@@ -9,15 +11,13 @@
     line-height: 1.5;
     color: black;
     text-align: left;
-    margin:10%;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 p{
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-    margin: 0;
-    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
 }
 
 img{
@@ -27,11 +27,10 @@ img{
 
 #header-background{
     width: auto;
-    height:30%;
+    height:20%;
     background: url('../assets/pictures/smallerrunner.jpeg');
     background-size:cover;
     background-position: center;
-    padding: auto;
     position: relative;
 }
 
@@ -44,39 +43,49 @@ h1{
     text-shadow: 0.1em 0.1em 0em #373535;
     top: 0%;
     left: 5%;
-    transform: translateX(-0%);
-    transform: translateY(-0%);
+    transform: translateX(-0%,-0%);
     position: absolute;
    
 }
-h3{
+h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 0;
 }
-
-
-#navigation{
-    width:100%;
-    background-color: rgb(240, 244, 252);
-    font-size: 1em;
+h3{
     text-align: center;
-    display: flex;
-    padding: 2%;
+    font-size: 1.5em;
+    margin-bottom: 0;
 }
-#navigation ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.dropdown{
+    position: relative;
+    display:inline-block;
 }
-#navigation li{
-    display: inline;
-}
-#navigation li a{
+.dropdown a{
+    color:black;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 12px 16px;
     text-decoration: none;
-    padding: .2em 1em;
-    color: rgb(88, 178, 234);
+    display: block;
+    transition: background-color 0.3s;
+    border: 2px solid #ddd;
     background-color: rgb(240, 244, 252);
+    border-radius: 5px;
+}
+.dropdown a:hover{
+    background-color: #ddd;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 244, 252);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 .gallery{
     display: grid;
@@ -97,7 +106,7 @@ form{
     font-size: 1em;
     max-width:400px;
     margin: 0 auto;
-    padding: 20 px;
+    padding: 20px;
     background-color: rgb(240, 244, 252);
     border: 2px solid #ddd;
     border-radius: 5px;
