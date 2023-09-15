@@ -24,29 +24,25 @@ img{
     max-width: 50%;
     height: auto;
 }
-
-#header-background{
-    width: auto;
-    height:20%;
+.header{
+    position: relative;
+    text-align: left;
+    color: rgb(88, 178, 234);
+}
+.header-background{
     background: url('../assets/pictures/smallerrunner.jpeg');
     background-size:cover;
-    background-position: center;
-    position: relative;
-}
-
-h1{ 
-    color: rgb(88, 178, 234);
-    text-align:left;
-    padding-top: 14%;
-    padding-left: 1em;
-    font-size: 2em;
-    text-shadow: 0.1em 0.1em 0em #373535;
-    top: 0%;
-    left: 5%;
-    transform: translateX(-0%,-0%);
-    position: absolute;
+    height:20%;
    
 }
+ .header-background h1{
+    text-align:left;
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 0em #373535;
+ 
+}
+
+
 h2{
     text-align: center;
     font-size: 1.5em;
