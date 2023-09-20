@@ -3,15 +3,31 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    background-color: rgb(255, 253, 253);
+:root {
+    --background-color: rgb(255, 253, 253);
+    --text-color: #333;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 1em;
     font-weight: 400;
-    line-height: 1.5;
-    color: black;
+    line-height: 1.5;  
     text-align: left;
 }
+.dark-theme {
+    --background-color: #333;
+    --text-color: #fff;
+}
+#themeBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
 p{
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -190,4 +206,5 @@ br{
         margin-bottom: 0.1em;
     }
 }
+
 
