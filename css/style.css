@@ -21,15 +21,27 @@ body{
     --text-color: #fff;
 }
 #themeBtn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #5e90c5;
+    color: #fdfbfb;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding:0;
+    border-radius: 50px;
     cursor: pointer;
+    width: 5%;
+    height: 5%;
+    justify-content:center;
+    align-items:flex;
+    display: flex;
+
+  }
+  #themeBtn i {
+    vertical-align: middle;
+    position: relative;
+    top:5px;
+  
   }
 
-p{
+  p{
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-left: 5%;
     margin-right: 5%;
