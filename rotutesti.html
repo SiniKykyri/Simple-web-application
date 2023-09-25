@@ -25,6 +25,7 @@
                                 <a href="index.html">Etusivu</a>
                                 <a href="rotutesti.html">Rotutesti</a>
                                 <a href="gallery.html">Galleria</a>
+                                <a href="quiz.html">Koira tietovisa</a>
                             </div>
                         </li>
                 </nav>
@@ -38,53 +39,45 @@
     
         </header>
 
-        <h2> Rotutesti</h2>
-        <p> Tällä sivulla voit tehdä leikkimielisen rotutestin. Testillä on siis tarkoitus kartoittaa mikä koirarotu sinulle parhaiten sopii. </p><br>
-        <p> Syötä lomakkeeseen tietosi ja paina lopuksi lähetä ja kerromme mikä rotu mielestämme sinulle sopii. </p><br>
-        <h3> Rotutesti </h3>
+        <h2> Tietovisa</h2>
+        <p> Tällä sivulla voit tehdä leikkimielisen tietovisan. </p>
+        <p> Vastaa kysymyksiin ja paina tassun kuvaa niin saat tietää montako pistettä sait! </p>
+        <p> Onnea matkaan! </p><br>
+        <h3> Tietovisa </h3>
         <div class="lomake">
             <form>
                 <br>
-                <label for="ekakysymys">1. Oletko aikaisemmin omistanut koiraa?</label><br>
-                <input type="radio" id="kyllä" name="kokemus" value="kyllä">
-                <label for="kyllä">Kyllä</label><br>
-                <input type="radio" id="ei" name="kokemus" value="ei">
-                <label for="ei">Ei</label><br>
-
-                <label for="tokakysymys">2. Kuinka paljon aikaa sinulla on käytettävissäsi koiran kanssa?</label><br>
-                <input type="radio" id="paljon" name="aika" value="paljon">
-                <label for="paljon">Paljon</label><br>
-                <input type="radio" id="vähän" name="aika" value="vähän">
-                <label for="vähän">Vähän</label><br>
-                <input type="radio" id="en tiedä" name="aika" value="en tiedä">
-                <label for="en tiedä">En tiedä</label><br>
-
-                <label for="kolmaskysymys">3. Kuinka paljon olet valmis käyttämään rahaa koiran hankintaan?</label><br>
-                <input type="radio" id="paljonraha" name="raha" value="paljon">
-                <label for="paljonraha">Paljon</label><br>
-                <input type="radio" id="vähänraha" name="raha" value="vähän">
-                <label for="vähänraha">Vähän</label><br>
-                <input type="radio" id="en tiedäraha" name="raha" value="en tiedä">
-                <label for="en tiedäraha">En tiedä</label><br>
-
-                <label for="neljäskysymys">4. Haluatko mahdollisesti kilpailla erilaisissa lajeissa?</label><br>
-                <input type="radio" id="kylläkilpailu" name="kilpailu" value="kyllä">
-                <label for="kylläkilpailu">Kyllä</label><br>
-                <input type="radio" id="eikilpailu" name="kilpailu" value="ei">
-                <label for="eikilpailu">Ei</label><br>
-
-                <label for="viideskysymys">5. Kuinka paljon olet valmis käyttämään aikaa koiran kouluttamiseen?</label><br>
-                <input type="radio" id="paljonkoulutus" name="koulutus" value="paljon">
-                <label for="paljonkoulutus">Paljon</label><br>
-                <input type="radio" id="vähänkoulutus" name="koulutus" value="vähän">
-                <label for="vähänkoulutus">Vähän</label><br>
-                <input type="radio" id="en tiedäkoulutus" name="koulutus" value="en tiedä">
-                <label for="en tiedäkoulutus">En tiedä</label><br>
-                <br>
-                <input type="submit" value="Lähetä"><br>
-                <br>
+                <label for="ekakysymys">1. Minkä ikäisinä pennut ovat luovutus ikäisiä?</label><br>
+                <input type="radio" id="2" name="luovutus" value="2">
+                <label for="2">2 vko</label><br>
+                <input type="radio" id="4" name="luovutus" value="4">
+                <label for="4">4 vko</label><br>
+                <input type="radio" id="6" name="luovutus" value="6">
+                <label for="6">6 vko</label><br>
+                <input type="radio" id="8" name="luovutus" value="8">
+                <label for="8">8 vko</label><br>
+                <label for="tokakysymys">2. Montako pentua pentueessa keskimäärin on? </label><br>
+                <input type="radio" id="eka" name="montako" value="1">
+                <label for="eka">1-2</label><br>
+                <input type="radio" id="toka" name="montako" value="2">
+                <label for="toka">5-6</label><br>
+                <input type="radio" id="kolmas" name="montako" value="3">
+                <label for="kolmas">7-9</label><br>
+                <input type="radio" id="neljas" name="montako" value="4">
+                <label for="neljas">10-12</label><br>
+                <label for="kolmaskysymys">3. Kauanko koira on raskaana? </label><br>
+                <input type="radio" id="30" name="kauanko" value="1">
+                <label for="30">noin 30 vrk</label><br>
+                <input type="radio" id="60" name="kauanko" value="2">
+                <label for="60">noin 60 vrk</label><br>
+                <input type="radio" id="90" name="kauanko" value="3">
+                <label for="90">noin 90 vrk</label><br>
             </form>
-
-
+            <div id="quizSubmit">
+                <button id="Submit">
+                    <i class="material-icons">pets</i>
+                </button>
         </div>
     </body>
+
+</html>

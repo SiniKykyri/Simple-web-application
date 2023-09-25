@@ -224,6 +224,26 @@ br {
     background-color: #0056b3;
 }
 
+#quizSubmit{
+    background-color: #f5f7f9;
+    padding: 10px 20px;
+    text-align: center;
+}
+#submit{
+    background-color: #69a3e1;
+    color: #0c0303;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+
 @media (max-width: 768px) {
     #navigation li {
         display: block;
