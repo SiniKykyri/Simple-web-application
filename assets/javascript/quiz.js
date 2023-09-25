@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function() {
 
 const submitButton = document.getElementById("Submit");
 submitButton.addEventListener("click", calculateResults);
@@ -22,7 +22,8 @@ function calculateResults(){
             score++;
         }
     }
-    resultsContainer.innerHTML =' Your score ${score} / ${Object.keys(correctAnswers).length}'
+    resultsContainer.innerHTML =` Pisteesi ovat: ${score} / ${Object.keys(correctAnswers).length}`;
 
    
 }
+});
