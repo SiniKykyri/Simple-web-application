@@ -8,10 +8,9 @@ function fetchAndDisplayCSV() {
                 var row = table.insertRow();
                 var cells = rows[i].split(',');
                 for (var j = 1; j < cells.length; j++) {
-                    if (cells[j].trim() !== '') { 
                         var cell = row.insertCell();
-                        cell.textContent = cells[j];
-                    }
+                        cell.textContent = cells[j].trim(); 
+                        console.log('Cell Content:', cells[j].trim());   
                 }
             }
 
