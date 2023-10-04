@@ -1,55 +1,66 @@
 <!DOCTYPE>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-        <title>Galleria</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="assets/javascript/dataScript.js"></script>
-    </head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Galleria</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
 
 
-    <body>
-        
-        <header class="header">
+<body>
 
-            <div class="header-background">
-                <h1>Koiruuksien koiruus</h1>
-            </div>
+    <header class="header">
+
+        <div class="header-background">
+            <h1>Koiruuksien koiruus</h1>
+        </div>
+
+        <div class="header-content">
+            <nav class="navbar">
+
+                <li class="dropdown">
+                    <a href="#"> # Valikko</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Etusivu</a>
+                        <a href="rotutesti.html">Rotutesti</a>
+                        <a href="gallery.html">Galleria</a>
+                        <a href="quiz.html">Koira tietovisa</a>
+                    </div>
+                </li>
+            </nav>
+
+            <button id="themeBtn">
+                <i class="material-icons">dark_mode</i>
+            </button>
+            <Script src="assets/javascript/theme.js"></Script>
+        </div>
+    </header>
+
+    <h2> Taulukko erilaisista koiraroduista</h2>
+    <p> Tälle sivulle on koottu taulukko, jossa kuvataan erilaisia koirarotuja. </p>
+    <p> Tämän taulukon tarkoitus on helpottaa koirarotujen vertailua keskenään. Ikävä kyllä lähteeni on englannin
+        kielinen, joten materiaali on englanniksi. </p>
+    <br>
+    <h3> Koira rodut taulukko </h3>
+    <script src="assets/javascript/dataScript.js"></script>
+
+    <div class="table"></div>
+
+    <br>
+    <p> Ja tänne nyt varmaan voi kirjoitella juttuja </p>
+    <time>
+        <p>Päivitetty 4.10.2023</p>
+    </time>
+
     
-            <div class="header-content">
-                <nav class="navbar">
-                    
-                        <li class="dropdown">
-                            <a href="#"> # Valikko</a>
-                            <div class="dropdown-content">
-                                <a href="index.html">Etusivu</a>
-                                <a href="rotutesti.html">Rotutesti</a>
-                                <a href="gallery.html">Galleria</a>
-                                <a href="quiz.html">Koira tietovisa</a>
-                            </div>
-                        </li>
-                </nav>
-    
-                <button id="themeBtn">
-                    <i class="material-icons">dark_mode</i>
-                </button>
-                <Script src="assets/javascript/theme.js"></Script>
-            </div>
-        </header>
 
-        <h2> Taulukko erilaisista koiraroduista</h2>
-        <p> Tälle sivulle on koottu taulukko, jossa kuvataan erilaisia koirarotuja.  </p>
-        <p> Tämän taulukon tarkoitus on helpottaa koirarotujen vertailua keskenään. Ikävä kyllä lähteeni on englannin kielinen, joten materiaali on englanniksi.   </p>
-        <br>
-        <h3> Koira rodut taulukko </h3>
-        <div class="table">
-            <table>
-            </table>
 
-            </div>
-         
 
-    </body>
+
+
+</body>
 
 </html>

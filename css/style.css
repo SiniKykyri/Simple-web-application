@@ -205,16 +205,6 @@ br {
     margin-top: 10px;
 }
 
-@keyframes example {
-    from {
-        background-color: rgb(240, 244, 252);
-    }
-
-    to {
-        background-color: #ddd;
-    }
-}
-
 .buttonspace {
     text-align: center;
 
@@ -268,31 +258,38 @@ br {
     text-decoration: none;
     font-weight: bold;
 }
-.table{
 
-    overflow-x: auto;
-    overflow-y: auto;
+.table{
+    height: 100%;
+
+
 }
 
 table{
-    max-width: 100%;
-    border-collapse: collapse;
+    border-collapse:collapse;
     border: 1px solid #ddd; 
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%;
-
+    margin-bottom: 5%;
+    display:flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 500px;
+    width: 90%;
+  
+   
 }
 
 th {
     background-color: #66c6cb;
     border: 1px solid #000000;
     padding: 8px;
-  
 }
 
 tr {
     border: 1px solid #000000;
+    font-size: 0.5em;
+
     
 }
 tr:hover {

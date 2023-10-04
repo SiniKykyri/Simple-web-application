@@ -8,22 +8,22 @@ function fetchAndDisplayCSV() {
                 var row = table.insertRow();
                 var cells = rows[i].split(',');
                 for (var j = 1; j < cells.length; j++) {
-                    var cell = row.insertCell();
-                    cell.textContent = cells[j];
+                    if (cells[j].trim() !== '') { 
+                        var cell = row.insertCell();
+                        cell.textContent = cells[j];
+                    }
                 }
             }
-            document.body.appendChild(table);
+
+            var divTable = document.querySelector('.table');
+            if(divTable){
+                divTable.appendChild(table);
+            }
+            else{
+                console.error('Div with class table not found');
+            }
         })
         .catch(error => console.error('Error fetching CSV:', error));
 }
 
 fetchAndDisplayCSV();
-
-
-$(document).ready(function () {
-    $('#slider').on('input', function () {
-        var rowCount = $(this).val();
-        $('table tr').hide();
-        $('table tr:lt(' + rowCount + ')').show();
-    });
-});
