@@ -36,27 +36,24 @@ body {
 }
 
 .header {
-    align-items: center;
-    background: url('../assets/pictures/gradient3.jpg');
+    background: url('../assets/pictures/texture-17.jpg');
     background-size: 100% 100%;
-    padding-top: 5%;
-
 }
 
 .header-content {
 
     display: inline-flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
 
 }
 
-.header-content h1 {
-    color: #fff;
-    font-size: 36px;
-    margin-top: 20px;
+.header-background h1 {
+    color: #252323;
+    font-size: 2em;
+    margin-left: 2%;
+  
 }
 
 #themeBtn {
