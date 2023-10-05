@@ -35,9 +35,28 @@ body {
     border: 2px solid #fff;
 }
 
+
 .header {
-    background: url('../assets/pictures/texture-17.jpg');
-    background-size: 100% 100%;
+    background-image: url('../assets/pictures/texture-17.jpg');
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+  
+
+}
+.header-text h1 {
+    color: #111010;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+
+    
+  
+  
 }
 
 .header-content {
@@ -49,12 +68,7 @@ body {
 
 }
 
-.header-background h1 {
-    color: #252323;
-    font-size: 2em;
-    margin-left: 2%;
-  
-}
+
 
 #themeBtn {
     background-color: #5e90c5;
@@ -286,14 +300,40 @@ td {
     border: 1px solid #000000;
     padding: 5px;
 }
+
+.insta-link{
+    display: inline-bloc;
+   
+}
+.insta-logo{
+    width: auto;
+    height: 5%;
+
+}
+.insta-link:hoover{
+    opacity: 0.8;
+
+}
+.insta-name{
+    margin-left: 1%;
+    font-size: 1.5em;
+    margin-bottom: 0%;
+    font-weight: bold;
+    color: #373535;
+    text-decoration: none;
+}
+
+
+
+
 /* for desktop:*/
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
+.col-1 {width: 100%;}
+.col-2 {width: 100%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
+.col-7 {width: 50%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
@@ -301,9 +341,9 @@ td {
 .col-12 {width: 100%;}
 
 [class*="col-" ] {
-    float: right;
-    padding: 15px;
-    border: 1px solid #000000;
+    float: left;
+    padding: 0%;
+  
   }
 
   .row::after{
@@ -318,5 +358,7 @@ td {
     [class*="col-"] {
       width: 100%;
     }
+    .header-text h1 {
+        font-size: 2em;
   
     }
