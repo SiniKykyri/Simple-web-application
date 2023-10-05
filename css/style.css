@@ -294,13 +294,13 @@ td {
 }
 
 .insta-link{
-    display: inline-bloc;
     text-align: left;
+    margin-left: 20%;
    
 }
 .insta-logo{
-    width: auto;
-    height: 5%;
+    width: 10%;
+    height: auto;
 
 }
 .insta-link:hoover{
@@ -308,18 +308,19 @@ td {
 
 }
 .insta-name{
-    margin-left: 1%;
-    font-size: 1.5em;
-    margin-bottom: 0%;
+    font-size: 1em;
     font-weight: bold;
     color: #373535;
     text-decoration: none;
-    text-align: center;
 }
 
 .row{
     display: flex;
     padding: 0 4px;
+}
+.row-2{
+    padding: 0 4px;
+    display:flex;
 }
 
 /* for desktop:*/
@@ -330,12 +331,14 @@ td {
 }
 .col-3 {
     flex:1;
-    background-color: rgb(221, 235, 240);   
+    background-color: rgb(221, 235, 240);
+    border: 2px solid #76afe9;   
 }
 .col-4 {
     flex:1;
     padding: 10px;
-    background-color: rgb(221, 235, 240);  
+    background-color: rgb(221, 235, 240); 
+    border: 2px solid #76afe9; 
 }
 .col-4 img{
     width: 100%;
@@ -348,13 +351,57 @@ td {
     background-color: rgb(221, 235, 240); 
 
 }
-.col-6 {width: 50%;}
-.col-7 {width: 50%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-6 {
+    flex:1;
+    width: 50%;
+    background-color: rgb(200, 219, 226); 
+    border: 2px solid #76afe9;
+}
+.col-7 {
+    flex:1;
+    width: 50%;
+    background-color: rgb(200, 219, 226);
+    border: 2px solid #76afe9; 
+}
+.col-8 {
+    width: 100%;
+}
+.col-8-images{
+    display:flex;
+}
+#eka{
+    flex:1;
+    width: 1%;
+    height: auto;
+   
+}
+#toka{
+    flex:1;
+    width: 1%;
+    height: auto;
+   
+    
+}
+#kolmas{
+    flex:1;
+    width: 1%;
+    height: auto;
+   
+}
+#neljas{
+    flex:1;
+    width: 1%;
+    height: auto;
+   
+}
+
+
+.col-9 {
+    width: 100%;
+    background-color: rgb(221, 235, 240);
+    
+}
+
 
 [class*="col-" ] {
     float: left;
@@ -385,6 +432,9 @@ td {
         width: 100%;
     }
     .row{
+        display: block;
+    }
+    .row-2{
         display: block;
     }
 }
