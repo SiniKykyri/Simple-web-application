@@ -1,61 +1,79 @@
 <!DOCTYPE>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-        <title>Galleria</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Galleria</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
 <body>
 
-    <header class="header">
+    <div class="col-1">
+        <header class="header">
+            <div class="header-text">
+                <h1>Koiruuksien koiruus</h1>
+            </div>
+        </header>
+    </div>
 
-        <div class="header-background">
-            <h1>Koiruuksien koiruus</h1>
-        </div>
-
+    <div class="col-2">
         <div class="header-content">
             <nav class="navbar">
-                
-                    <li class="dropdown">
-                        <a href="#"> # Valikko</a>
-                        <div class="dropdown-content">
-                            <a href="index.html">Etusivu</a>
-                            <a href="rotutaulu.html">Rotutaulu</a>
-                            <a href="gallery.html">Galleria</a>
-                            <a href="quiz.html">Koira tietovisa</a>
-                        </div>
-                    </li>
+
+                <li class="dropdown">
+                    <a href="#"> # Valikko</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Etusivu</a>
+                        <a href="rotutaulu.html">Rotutaulu</a>
+                        <a href="gallery.html">Galleria</a>
+                        <a href="quiz.html">Koira tietovisa</a>
+                    </div>
+                </li>
             </nav>
 
             <button id="themeBtn">
                 <i class="material-icons">dark_mode</i>
             </button>
             <Script src="assets/javascript/theme.js"></Script>
-
         </div>
 
-    </header>
-    <br>
+    </div>
+    
     <div class="gallery">
         <div class="gallery-item"><img src="assets/pictures/islanninlammaskoira.jpg" alt="Islanninlammaskoira pentu">
-        <figcaption>Islanninlammaskoira pentu</figcaption></div>
+            <figcaption>Islanninlammaskoira pentu</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/samojedi.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Samojedi</figcaption></div>
+            <figcaption>Samojedi</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/labbis.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Labradorinnoutaja</figcaption></div>
+            <figcaption>Labradorinnoutaja</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/mayris.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Pitkäkarvainen  mäyräkoira</figcaption></div>
+            <figcaption>Pitkäkarvainen mäyräkoira</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/lagotto.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Lagotto Romagnolo</figcaption></div>
+            <figcaption>Lagotto Romagnolo</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/sheltti.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Shetlanninlammaskoira</figcaption></div>
+            <figcaption>Shetlanninlammaskoira</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/sakemanni.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Saksanpaimenkoira</figcaption></div>
+            <figcaption>Saksanpaimenkoira</figcaption>
+        </div>
         <div class="gallery-item"><img src="assets/pictures/jackrussel.jpg" alt="Koiruuksien koiruus">
-            <figcaption>Jackrusselinterrieri</figcaption></div>
+            <figcaption>Jackrusselinterrieri</figcaption>
+        </div>
     </div>
-    <br>
+    <div class="col-9">
+        <footer>
+            <p>© 2023 Koiruuksien koiruus</p>
+            <p>Tämä sivu on tehty kouluprojektia varten. Älä ota sivua liian vakavasti. </p>
+        </footer>
+    </div>
+    
 </body>
+
 </html>

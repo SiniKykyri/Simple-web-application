@@ -133,9 +133,11 @@ ul {
 }
 
 .gallery {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    background-color: rgb(240, 244, 252);
 }
 
 .gallery-item {
@@ -143,6 +145,7 @@ ul {
 }
 
 .gallery img {
+    margin-top: 10%;
     max-width: 90%;
     height: auto;
 }
@@ -478,6 +481,9 @@ td {
     }
 
     .row-2 {
+        display: block;
+    }
+    .gallery {
         display: block;
     }
 }
