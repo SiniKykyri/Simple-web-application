@@ -300,6 +300,20 @@ td {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+[class*="col-" ] {
+    float: right;
+    padding: 15px;
+    border: 1px solid #000000;
+  }
+
+  .row::after{
+    content:"";
+    clear: both;
+    display: table;
+  }
+
+  /* for mobile phones: */
+
 @media (max-width: 768px) {
     [class*="col-"] {
       width: 100%;
