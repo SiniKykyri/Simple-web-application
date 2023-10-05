@@ -331,6 +331,7 @@ td {
 /* for desktop:*/
 .col-1 {
     width: 100%;
+    border: 2px solid #fcfcfc;
 }
 
 .col-2 {
@@ -341,20 +342,20 @@ td {
 .col-3 {
     flex: 1;
     background-color: rgb(221, 235, 240);
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 }
 
 .col-4 {
     flex: 1;
     padding: 10px;
     background-color: rgb(221, 235, 240);
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 }
 
 .col-4 img {
     width: 100%;
     max-width: 100%;
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 
 }
 
@@ -367,7 +368,7 @@ td {
 .col-5 img {
     width: 100%;
     max-width: 100%;
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 
 }
 
@@ -375,14 +376,14 @@ td {
     flex: 1;
     width: 50%;
     background-color: rgb(200, 219, 226);
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 }
 
 .col-7 {
     flex: 1;
     width: 50%;
     background-color: rgb(200, 219, 226);
-    border: 2px solid #76afe9;
+    border: 2px solid #fcfcfc;
 }
 
 .col-8 {
@@ -400,6 +401,7 @@ td {
     flex: 1;
     width: 1%;
     height: auto;
+    border: 2px solid #fcfcfc;
 
 }
 
@@ -407,6 +409,7 @@ td {
     flex: 1;
     width: 1%;
     height: auto;
+    border: 2px solid #fcfcfc;
 
 
 }
@@ -415,6 +418,7 @@ td {
     flex: 1;
     width: 1%;
     height: auto;
+    border: 2px solid #fcfcfc;
 
 }
 
@@ -422,6 +426,7 @@ td {
     flex: 1;
     width: 1%;
     height: auto;
+    border: 2px solid #fcfcfc;
 
 }
 
