@@ -12,14 +12,18 @@
 
 </head>
 
-<body class="body">
+<body>
 
-    <header class="header">
+    <div class="col-1">
+        <header class="header">
+            <div class="header-text">
+                <h1>Koiruuksien koiruus</h1>
+            </div>
 
-        <div class="header-background">
-            <h1>Koiruuksien koiruus</h1>
-        </div>
+        </header>
+    </div>
 
+    <div class="col-2">
         <div class="header-content">
             <nav class="navbar">
 
@@ -38,12 +42,12 @@
                 <i class="material-icons">dark_mode</i>
             </button>
             <Script src="assets/javascript/theme.js"></Script>
-
         </div>
 
-    </header>
+    </div>
 
-    <div class="quiz"> <h2>Tervetuloa koiratietovisaan!</h2>
+    <div class="quiz">
+        <h2>Tervetuloa koiratietovisaan!</h2>
         <p>Testaa tietosi koirista ja koiraroduista!</p>
         <p>Testi sisältää 3 kysymystä. Vastaa kysymyksiin ja paina lopuksi tassu kuvaketta. </p>
         <p>Onnea matkaan!</p>
@@ -81,17 +85,26 @@
             </form>
         </div>
     </div>
-</div>
-        <div class="quizSubmit">
-            <button id="Submit">
-                <i class="material-icons">pets</i>
-            </button>
-            <div id="quizResults"></div>
-    </div>
-    
-    
-      
-  
 
- </body>
+    </div>
+    <div class="quizSubmit">
+        <button id="Submit">Lähetä
+            <i class="material-icons">pets</i>
+        </button>
+        <div id="quizResults"></div>
+    </div>
+
+    <div class="col-9">
+        <footer>
+            <p>© 2023 Koiruuksien koiruus</p>
+            <p>Tämä sivu on tehty kouluprojektia varten. Älä ota sivua liian vakavasti. </p>
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
 </html>

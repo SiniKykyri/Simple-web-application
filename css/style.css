@@ -158,19 +158,62 @@ ul {
     background-color: rgb(240, 244, 252);
 }
 
+.quiz{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(221, 235, 240);
+}
+
+.quizSubmit {
+    background-color: rgb(221, 235, 240);
+    padding: 1% 2%;
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+#Submit {
+    padding: 1% 2%;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(126, 178, 221);
+    font-size:0.8em;
+}
+.material-icons {
+    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+
+}
+#Submit:hover {
+    background-color: rgb(57, 125, 177);
+}
+
+#quizResults{
+    margin-top: 5%;
+}
+
 form {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 1em;
-    max-width: 400px;
+    max-width: 50%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0%;
     background-color: rgb(240, 244, 252);
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid #0d0c0c;
+    text-align: left;
 }
 
 label {
-    font-weight: bold;
+    font-size: 1em;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 input[type="radio"] {
@@ -191,74 +234,18 @@ input[type="radio"]+label:before {
     top: 2px;
     width: 10px;
     height: 10px;
-    border: 2px solid #007bff;
+    border: 2px solid #3f95bc;
     border-radius: 50%;
 }
 
 input[type="radio"]:checked+label:before {
-    background-color: #007bff;
-    border: 2px solid #007bff;
+    background-color: #3f95bc;
+    border: 2px solid #3f95bc;
 
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
 }
 
 br {
     margin-top: 10px;
-}
-
-.buttonspace {
-    text-align: center;
-
-}
-
-.buttonspace button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.buttonspace button:hover {
-    background-color: #0056b3;
-}
-
-.quizSubmit {
-    background-color: #f5f7f9;
-    padding: 10px 20px;
-    text-align: center;
-    color: #333;
-}
-
-.quizSubmit submit {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-
-.quizSubmit quizResults {
-    background-color: #f5f7f9;
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: bold;
-
 }
 
 .link {
@@ -329,6 +316,7 @@ td {
     color: #373535;
     text-decoration: none;
 }
+
 
 .row {
     display: flex;
@@ -486,4 +474,7 @@ td {
     .gallery {
         display: block;
     }
+  
+ 
+  
 }
