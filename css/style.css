@@ -25,12 +25,14 @@ body {
     --background-color: #333;
     --text-color: #fff;
 }
+
 .dark-theme form {
     background-color: #333;
     color: #fff;
     border: 2px solid #fff;
 }
-.dark-theme .quizSubmit{
+
+.dark-theme .quizSubmit {
     background-color: #333;
     color: #fff;
     border: 2px solid #fff;
@@ -47,6 +49,7 @@ body {
     justify-content: center;
 
 }
+
 .header-text h1 {
     color: #111010;
     font-size: 4em;
@@ -88,6 +91,11 @@ h3 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 10%;
 }
 
 .dropdown {
@@ -226,13 +234,14 @@ br {
     background-color: #0056b3;
 }
 
-.quizSubmit{
+.quizSubmit {
     background-color: #f5f7f9;
     padding: 10px 20px;
     text-align: center;
     color: #333;
 }
-.quizSubmit submit{
+
+.quizSubmit submit {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -241,47 +250,48 @@ br {
 }
 
 
-.quizSubmit quizResults{
+.quizSubmit quizResults {
     background-color: #f5f7f9;
     padding: 10px 20px;
     text-align: center;
     font-weight: bold;
 
 }
-.link{
+
+.link {
     text-align: center;
     margin: 1%;
     margin-left: 5%;
     font-size: 1.2em;
     margin-bottom: 0;
 }
+
 .link a {
     color: #4e9cdc;
     text-decoration: none;
     font-weight: bold;
 }
 
-.table{
-    height: 90%;
-}
-
-table{
-    border-collapse:collapse;
-    border: 1px solid #ddd; 
-    margin-left: 5%;
-    margin-right: 5%;
-    display:flex;
+table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    display: flex;
     overflow-y: scroll;
     overflow-x: scroll;
-    height: 500px;
+    height: 60%;
     width: 80%;
-   
+    background-color: rgb(253, 253, 253);
+
 }
 
 
 tr {
     border: 1px solid #000000;
-    font-size: 0.8em;  
+    font-size: 0.8em;
 }
 
 tr:hover {
@@ -293,148 +303,181 @@ td {
     padding: 5px;
 }
 
-.insta-link{
+.insta-link {
     text-align: left;
     margin-left: 20%;
-   
+
 }
-.insta-logo{
+
+.insta-logo {
     width: 10%;
     height: auto;
 
 }
-.insta-link:hoover{
+
+.insta-link:hoover {
     opacity: 0.8;
 
 }
-.insta-name{
+
+.insta-name {
     font-size: 1em;
     font-weight: bold;
     color: #373535;
     text-decoration: none;
 }
 
-.row{
+.row {
     display: flex;
     padding: 0 4px;
 }
-.row-2{
+
+.row-2 {
     padding: 0 4px;
-    display:flex;
+    display: flex;
 }
 
 /* for desktop:*/
-.col-1 {width: 100%;}
+.col-1 {
+    width: 100%;
+}
+
 .col-2 {
     width: 100%;
     background-color: rgb(57, 125, 177);
 }
+
 .col-3 {
-    flex:1;
+    flex: 1;
     background-color: rgb(221, 235, 240);
-    border: 2px solid #76afe9;   
+    border: 2px solid #76afe9;
 }
+
 .col-4 {
-    flex:1;
+    flex: 1;
     padding: 10px;
-    background-color: rgb(221, 235, 240); 
-    border: 2px solid #76afe9; 
+    background-color: rgb(221, 235, 240);
+    border: 2px solid #76afe9;
 }
-.col-4 img{
+
+.col-4 img {
     width: 100%;
     max-width: 100%;
     border: 2px solid #76afe9;
 
 }
+
 .col-5 {
-    flex:1;
-    background-color: rgb(221, 235, 240); 
+    flex: 1;
+    background-color: rgb(221, 235, 240);
 
 }
-.col-6 {
-    flex:1;
-    width: 50%;
-    background-color: rgb(200, 219, 226); 
+
+.col-5 img {
+    width: 100%;
+    max-width: 100%;
     border: 2px solid #76afe9;
+
 }
-.col-7 {
-    flex:1;
+
+.col-6 {
+    flex: 1;
     width: 50%;
     background-color: rgb(200, 219, 226);
-    border: 2px solid #76afe9; 
+    border: 2px solid #76afe9;
 }
+
+.col-7 {
+    flex: 1;
+    width: 50%;
+    background-color: rgb(200, 219, 226);
+    border: 2px solid #76afe9;
+}
+
 .col-8 {
     width: 100%;
+    background-color: rgb(221, 235, 240);
+
 }
-.col-8-images{
-    display:flex;
+
+.col-8-images {
+    display: flex;
+
 }
-#eka{
-    flex:1;
+
+#eka {
+    flex: 1;
     width: 1%;
     height: auto;
-   
+
 }
-#toka{
-    flex:1;
+
+#toka {
+    flex: 1;
     width: 1%;
     height: auto;
-   
-    
+
+
 }
-#kolmas{
-    flex:1;
+
+#kolmas {
+    flex: 1;
     width: 1%;
     height: auto;
-   
+
 }
-#neljas{
-    flex:1;
+
+#neljas {
+    flex: 1;
     width: 1%;
     height: auto;
-   
+
 }
 
 
 .col-9 {
     width: 100%;
     background-color: rgb(221, 235, 240);
-    
+
 }
 
 
-[class*="col-" ] {
+[class*="col-"] {
     float: left;
     padding: 0%;
-  
-  }
 
-  .row::after{
-    content:"";
+}
+
+.row::after {
+    content: "";
     clear: both;
     display: table;
-  }
+}
 
-  /* for mobile phones: */
+/* for mobile phones: */
 
 @media (max-width: 768px) {
     [class*="col-"] {
-      width: 100%;
-      flex:1;
-      text-align: center;
-      padding: 10px;
+        width: 100%;
+        flex: 1;
+        text-align: center;
+        padding: 10px;
     }
+
     .header-text h1 {
         font-size: 2em;
-  
+
     }
-    .col-4 img{
+
+    .col-4 img {
         width: 100%;
     }
-    .row{
+
+    .row {
         display: block;
     }
-    .row-2{
+
+    .row-2 {
         display: block;
     }
 }
