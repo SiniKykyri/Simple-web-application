@@ -6,9 +6,8 @@
     <title>Galleria</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <script src="assets/javascript/dogNameScript.js"></script>
 </head>
-
 
 <body>
 
@@ -17,7 +16,6 @@
             <div class="header-text">
                 <h1>Koiruuksien koiruus</h1>
             </div>
-
         </header>
     </div>
 
@@ -46,52 +44,57 @@
     </div>
 
     <div class="row">
+
         <div class="col-3">
-            <h2>Taulukko erilaisista koiraroduista</h2>
-            <p> Tälle sivulle on koottu taulukko, jossa kuvataan erilaisia koirarotuja. </p>
-            <p> Tämän taulukon tarkoitus on helpottaa koirarotujen vertailua keskenään. Ikävä kyllä lähteeni on englannin kielinen, joten materiaali on englanniksi. </p>
-        </div>
-
-        <div class="col-4">
-            <h2>Faktaa roduista:</h2>
-            <ul>
-                <li>Suomessa on rekisteröity noin 320</li>
-                <li>FCI on hyväksynyt kaiken kaikkiaan 360 rotua</li>
-                <li>Labradorinnoutaja on suomen suosituin koirarotu</li>
-                <li>Suomessa rekisteröintiin 2022 vuonna 48 629 koiraa</li>
-            </ul>
-        </div>
-
-        <div class="col-5">
-            <img src="assets/pictures/labbis.jpg" alt="koiruli"> 
-        </div>
-
-    </div>
-
+            <h2>Koiran nimi</h2>
+            <p>Koiran nimen keksiminen voi olla vaikeaa. Tältä sivulta löydät käyttäjien ehdottamia koiran nimiä ja voit lisätä listaan myös omasi.  Täytä lomakkeeseen nimi ehdotus ja paina lähetä, niin se lisätään muiden ehdotuksten jatkoksi.</p>
     
-    <div class="col-6">
-            <button id="refreshBtn">
-                <i class="material-icons">refresh</i>
-            </button>
-    </div>
+        </div>
+        <div class="col-4">
+            <div class="nimiehdotus"> 
+                <h2>Kirjoita ehdotuksesi tähän:</h2><br>
+                <form id="nameForm">
+                    <label for ="nimi">Nimi ehdotus: </label>
+                    <input type="text" id="name" name="nimi" placeholder="Kirjoita nimi ehdotuksesi"><br>
+                    <label for="girl/boy">Sopiiko nimi mielestäsi urokselle vai naaraalle?</label><br>
+                    <input type="radio" id="girl" name ="boyorgirl" value="girl">
+                    <label for="girl">Naaras koiralle</label><br>
+                    <input type="radio" id="boy" name="boyorgirl" value="boy">
+                    <label for="boy">Uros koiralle</label><br>
+                    <input type="radio" id="both" name="boyorgirl" value="both">
+                    <label for="both">Kummalle vain</label><br>
 
-        <div class="col-7">
-            <p>Tänne joku filtteri</p>
+                    <button id="submitName">Lähetä </button>
+                </form>
+
+            </div>
+        </div>
+    
+        <div class="col-5">
+            <div id="lista">
+                <h2>Nimi ehdotukset: </h2>
+                <ul id="nimilista">
+                    <li> Tahvo</li>
+                </ul>
+            </div>
         </div>
     </div>
- 
 
-    <div class="col-8">
-        <script src="assets/javascript/dataScript.js"></script>
-        <div class="table"></div>
-    </div>
 
+
+    <div class="col-6"></div>
+    <div class="col-7"></div>
+    <div class="col-8"></div>
+   
     <div class="col-9">
         <footer>
             <p>© 2023 Koiruuksien koiruus</p>
             <p>Tämä sivu on tehty kouluprojektia varten. Älä ota sivua liian vakavasti. </p>
         </footer>
     </div>
-</body>
+    
 
+
+
+</body>
 </html>

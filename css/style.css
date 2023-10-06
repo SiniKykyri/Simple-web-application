@@ -363,13 +363,35 @@ img{
     width: 100%;
 
 }
+#submitName{
+    padding: 1% 2%;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(126, 178, 221);
+    font-size:0.8em;
+}
+#suggestName{
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(126, 178, 221);
+    font-size:0.8em;
+}
 
 
+/* for col-3, col-4 and col-5: */
 .row {
     display: flex;
     padding: 0 4px;
 }
-
+/* for col-6, col-7  */
 .row-2 {
     padding: 0 4px;
     display: flex;
@@ -395,7 +417,6 @@ img{
 
 .col-4 {
     flex: 1;
-    padding: 10px;
     background-color: rgb(221, 235, 240);
     border: 2px solid #fcfcfc;
 }
