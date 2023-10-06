@@ -316,6 +316,23 @@ td {
     color: #373535;
     text-decoration: none;
 }
+.clickkbtn{
+    width: 100%;
+    background-color: rgb(221, 235, 240);
+    border: 2px solid #fcfcfc;
+    text-align: center;
+}
+#clickbtn{
+    padding: 1% 2%;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(126, 178, 221);
+    font-size:0.8em;
+}
 
 
 .row {
@@ -336,7 +353,7 @@ td {
 
 .col-2 {
     width: 100%;
-    background-color: rgb(57, 125, 177);
+    background-color: rgb(97, 163, 214);
     border: 2px solid #fcfcfc;
 }
 
@@ -489,6 +506,23 @@ td {
         display: flex;
         justify-content: center;
     }
+
+    form {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 1em;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0%;
+        background-color: rgb(240, 244, 252);
+        border: 2px solid #0d0c0c;
+        text-align: left;
+    }
+    input[type="radio"]+label {
+        position: relative;
+        padding-left: 8%;
+        cursor: pointer;
+    }
+  
   
  
   
