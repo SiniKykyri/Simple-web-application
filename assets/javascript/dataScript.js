@@ -9,14 +9,14 @@ function fetchAndDisplayCSV() {
                 var cells = rows[i].split(',');
                 for (var j = 1; j < cells.length; j++) {
                         var cell = row.insertCell();
-                        cell.textContent = cells[j].trim();  
-                        console.log('Cell Content:', cells[j].trim());  
+                        cell.textContent = cells[j].trim();    
                 }
             }
 
             var divTable = document.querySelector('.table');
             if(divTable){
                 divTable.appendChild(table);
+                table.id="breedTable";
             }
             else{
                 console.error('Div with class table not found');
@@ -30,6 +30,18 @@ fetchAndDisplayCSV();
 document.addEventListener('DOMContentLoaded', function() {
     
     const btn = document.getElementById("refreshBtn");
-    btn.addEventListener("click", fetchAndDisplayCSV);
-    
+    btn.addEventListener("click", refreshTable);
+
+    function refreshTable(){
+
+        const table = document.getElementById("breedTable");
+        
+        if(table){
+            table.remove();
+            fetchAndDisplayCSV();
+
+        } 
+        
+    }
+
 });
