@@ -26,3 +26,10 @@ function fetchAndDisplayCSV() {
 }
 
 fetchAndDisplayCSV();
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const btn = document.getElementById("refreshBtn");
+    btn.addEventListener("click", fetchAndDisplayCSV);
+    
+});
