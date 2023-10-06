@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const btn = document.getElementById("clickbtn");
-    submitButton.addEventListener("click", alertMessage);
+    btn.addEventListener("click", alertMessage);
     
  
     function alertMessage(){
