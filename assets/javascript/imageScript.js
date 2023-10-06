@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+
 var img = document.getElementById('img');
 
 var slides = ['assets/pictures/taustakuva.jpg','assets/pictures/islanninlammaskoira.jpg','assets/pictures/labbis.jpg'];
@@ -16,4 +19,6 @@ function slider(){
     img.innerHTML = "<img src="+slides[Start-1]+">";
 }
 
-setInterval(slider, 2000);
+setInterval(slider, 4000);
+
+});

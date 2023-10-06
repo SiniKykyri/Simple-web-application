@@ -346,18 +346,22 @@ td {
 }
 .slider{
     width: 100%;
-    height: 500px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin: 20 px auto;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
 }
 #img{
-    width: 100%;
-    height:100%;
-    object-fit: contain;
+    width: 50%;
+    height:auto;
+    
+   
+    
 }
 img{
     height: 100%;
     width: 100%;
+
 }
 
 
@@ -507,6 +511,7 @@ img{
 
     .col-4 img {
         width: 100%;
+        height: auto;
     }
 
     .row {
@@ -543,6 +548,13 @@ img{
         position: relative;
         padding-left: 8%;
         cursor: pointer;
+    }
+    .slider{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    
     }
   
   

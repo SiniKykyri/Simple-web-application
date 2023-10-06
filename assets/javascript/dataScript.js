@@ -4,7 +4,7 @@ function fetchAndDisplayCSV() {
         .then(csvData => {
             var rows = csvData.split('\n');
             var table = document.createElement('table');
-            for (var i = 0; i < rows.length; i++) {
+            for (var i = 0; i < rows.length; i++) { 
                 var row = table.insertRow();
                 var cells = rows[i].split(',');
                 for (var j = 0; j < cells.length; j++) {
