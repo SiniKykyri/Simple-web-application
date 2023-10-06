@@ -7,7 +7,7 @@ function fetchAndDisplayCSV() {
             for (var i = 0; i < rows.length; i++) {
                 var row = table.insertRow();
                 var cells = rows[i].split(',');
-                for (var j = 1; j < cells.length; j++) {
+                for (var j = 0; j < cells.length; j++) {
                         var cell = row.insertCell();
                         cell.textContent = cells[j].trim();    
                 }
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(table){
             table.remove();
             fetchAndDisplayCSV();
-
         } 
         
     }

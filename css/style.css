@@ -344,6 +344,21 @@ td {
     background-color: rgb(126, 178, 221);
     font-size:0.8em;
 }
+.slider{
+    width: 100%;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20 px auto;
+}
+#img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
 
 
 .row {
@@ -421,10 +436,6 @@ td {
 
 }
 
-.col-8-images {
-    display: flex;
-
-}
 
 #eka {
     flex: 1;
