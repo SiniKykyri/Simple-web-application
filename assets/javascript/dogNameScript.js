@@ -1,44 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
-   
-    let gender;
-    const btn = document.getElementById("submitName");
-    btn.addEventListener("click", saveName);
 
-    const possibleAnswers = {
-        boyorgirl: "girl",
-        boyorgirl: "boy",
-        boyorgirl: "both",
-    };
+    const form = document.querySelector('#nameForm');
+    const nameInput = document.querySelector('#name');
+    const submitButton = document.querySelector('#submitName');
 
-    function saveResults(){
-        const form = document.querySelector("#nameForm");
-        const resultsContainer = document.getElementById("lista");
-        const nimilista = document.getElementById("nimilista");
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();
 
-        for ( const question in possibleAnswers) {
-            const selectedOption = form[question].value;
-            if (selectedOption === possibleAnswers[question]){
-               gender=selectedOption;
-               console.log(gender);
-               
+        const name = nameInput.value;
+        const genderRadios = document.getElementsByName("boyorgirl");
+        let selectedGender = "";
+
+        const genderRadiosArray = Array.from(genderRadios);
+        genderRadiosArray.forEach(function(radio){
+            if(radio.checked){
+                selectedGender = radio.value;
             }
+        });
+
+    
+
+      for (let i =0; i<genderRadios.length; i++){
+        if(genderRadios[i].checked){
+            selectedGender = genderRadios[i].value;
+            break;
         }
     }
         
-        function saveName(){
-            const nameInput = document.getElementById("name").value;
 
-            if(nameInput.trim()!==""){
-    
-                const listItem = document.createElement("li");
-                listItem.textContent = nameInput;
-                nimilista.appendChild(listItem);
-    
-                
-            }
-
-
+        if(name.trim() !==""){
+            const nimilista = document.getElementById("nimilista");
+            const listItem = document.createElement("li");
+            listItem.textContent = name + " " + selectedGender;
+            nimilista.appendChild(listItem);
         }
-    
+
+    });
+
+   
+   
 
 });
