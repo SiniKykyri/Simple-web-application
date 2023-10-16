@@ -71,20 +71,21 @@ const sortBtn = document.getElementById("sortBtn");
 sortBtn.addEventListener("click", function(){
 
     const table = document.getElementById("breedTable");
-    const rows = Array.from(table.rows).slice(1);
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.rows);
 
-    rows.sort(function(a, b) {
+    rows.sort(function (a, b) {
         const nameA = a.cells[0].textContent.trim().toUpperCase();
         const nameB = b.cells[0].textContent.trim().toUpperCase();
         return nameA.localeCompare(nameB);
     });
-    while(table.rows.length > 1){
-        table.deleteRow(1);
+
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
     }
 
-
-    rows.forEach(row => {
-        table.appendChild(row);
+    rows.forEach(function (row) {
+        tbody.appendChild(row);
     });
 
 
