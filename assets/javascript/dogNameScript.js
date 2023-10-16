@@ -18,21 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-    
-
       for (let i =0; i<genderRadios.length; i++){
         if(genderRadios[i].checked){
             selectedGender = genderRadios[i].value;
             break;
         }
     }
-        
-
         if(name.trim() !==""){
             const nimilista = document.getElementById("nimilista");
             const listItem = document.createElement("li");
-            listItem.textContent = name + " " + selectedGender;
+            listItem.textContent = name ;
             nimilista.appendChild(listItem);
+            nameInput.value = "";
         }
 
     });
