@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgb(251, 251, 251);
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 10%;
+}
+br {
+    margin-top: 10px;
+}
+
+/*//////// Header muotoilut ///////////////////////////////*/
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #feffff;
+}
+
+.header-text h1 {
+    color: rgb(105, 167, 215);
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin: 1%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-content {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Teeman vaihto napin muotoilut */
+#themeBtn {
+    background-color: #689dd6;
+    color: #fdfbfb;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Drop down menun muotoilut */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+    color: black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    border: 2px solid #ddd;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+
+.dropdown a:hover {
+    background-color: #dddddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 244, 252);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Gallerian muotoilut*/
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #fcfcfc;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery img {
+    margin-top: 10%;
+    max-width: 90%;
+    height: auto;
+}
+
+.gallery-item:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    border: #373535 solid 2px;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.clickkbtn{
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 2px solid #fcfcfc;
+    text-align: center;
+}
+#clickbtn{
+    padding: 1% 2%;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(186, 203, 218);
+    font-size:0.8em;
+}
+
+/* Visailun muotoilut */
+
+.quiz{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    background-color:  #fcfcfc;
+}
+
+.quizSubmit {
+    background-color: #fcfcfc;
+    padding: 1% 2%;
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+#Submit {
+    padding: 1% 2%;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(183, 205, 222);
+    font-size:0.8em;
+}
+.material-icons {
+    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+
+}
+#Submit:hover {
+    background-color: rgb(123, 129, 133);
+}
+
+#quizResults{
+    margin-top: 5%;
+}
+#resultImage{
+    width: 30%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+form {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0%;
+    background-color: #fcfcfc;
+    border: 2px solid #0d0c0c;
+    text-align: left;
+}
+input[type="radio"]+label {
+    position: relative;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+input[type="radio"]+label:before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #3f95bc;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked+label:before {
+    background-color: #3f95bc;
+    border: 2px solid #3f95bc;
+
+}
+label {
+    font-size: 1em;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+input[type="radio"] {
+    display: none;
+
+}
+
+/* Taulukon muotoilut */ 
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 60%;
+    width: 80%;
+    background-color: rgb(253, 253, 253);
+}
+
+tr {
+    border: 1px solid #000000;
+    font-size: 0.8em;
+}
+
+tr:hover {
+    background-color: #c0dceb;
+}
+
+td {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+#refreshBtn{
+    padding: 1% 2%;
+    text-align: center;
+    color: #000405;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(105, 178, 238);
+    font-size:0.8em;
+}
+#refreshBtn:hover{
+    background-color: rgb(57, 125, 177);
+}
+#sortBtn{
+    padding: 1% 2%;
+    text-align: center;
+    color: #000405;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(105, 178, 238);
+    font-size:0.8em;
+}
+#sortBtn:hover{
+    background-color: rgb(57, 125, 177);
+}
+#filterInput{
+    padding: 1% 2%;
+    text-align: center;
+    color: #000405;
+    font-weight: bold;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(227, 233, 238);
+    font-size:1em;
+}
+#filterInput:hover{
+    background-color: rgb(221, 231, 239);
+}
+.slider{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Etusivun muotoilut */
+
+
+.link {
+    list-style: none;
+    padding:0%;
+    
+}
+
+.link a {
+    display: block;
+    padding: 1% 2%;
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+.link a:hover {
+    background-color: #ebeef1;
+    color: #000000;
+    border: 2px solid #050505;
+}
+.link-podcast{
+    list-style: none;
+    padding:0%;
+
+}
+.link-podcast a{
+    background: url('/assets/pictures/Spotify_Logo_RGB_Green.png') no-repeat left center;
+    background-size: contain;
+    display: block;
+    padding: 1% 2%;
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+.link-podcast a:hover {
+    background-color: #ebeef1;
+    color: #000000;
+    border: 2px solid #050505;
+}
+
+
+.insta-link {
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.insta-username {
+    font-size: 1em;
+    font-weight: bold;
+    color: #373535;
+    text-decoration: none;
+}
+
+.insta-link a {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
+.insta-link a:hover {
+    background-color: #ebeef1;
+}
+
+.insta-link a::before {
+    content: ""; 
+    background: url('/assets/pictures/Instagram_Glyph_Gradient.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#img{
+    width: 100%;
+    height:auto;
+    
+   
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+
+}
+
+/*///////////////////////////////////////////////*/
+
+
+/* for col-3, col-4 and col-5: */
+.row {
+    display: flex;
+    padding: 0 4px;
+}
+/* for col-6, col-7  */
+.row-2 {
+    padding: 0 4px;
+    display: flex;
+}
+
+/* for desktop:*/
+.col-1 {
+    width: 100%;
+    border: 1% solid #fcfcfc;
+}
+
+.col-2 {
+    width: 100%;
+    background-color: rgb(203, 213, 223);
+    border: 2px solid #ffffff;
+}
+
+.col-3 {
+    flex: 1;
+    background-color:  #fcfcfc;
+    border: 2px solid #ffffff;
+}
+
+.col-4 {
+    flex: 1;
+    background-color: #fcfcfc;
+    border: 2px solid #ffffff;
+}
+
+.col-4 img {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #ffffff;
+
+}
+
+.col-5 {
+    flex: 1;
+    background-color: #fcfcfc;
+    border: 2px solid #ffffff;
+
+}
+
+.col-5 img {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #ffffff;
+    
+
+}
+
+.col-6 {
+    flex: 1;
+    width: 50%;
+    background-color: #fcfcfc;
+    border: 2px solid #ffffff;
+    text-align: center;
+   
+}
+
+.col-7 {
+    flex: 1;
+    width: 50%;
+    background-color: #fcfcfc;
+    border: 2px solid #ffffff;
+    text-align: center;
+}
+
+.col-8 {
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 2px solid #ffffff;
+
+}
+.col-9 {
+    width: 100%;
+    background-color:#fcfcfc;
+    border: 2px solid #ffffff;
+
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0%;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*//////////////// Yleiset Dark theme koodit ///////////////////////*/
+.dark-theme {
+    --background-color: #333;
+    --text-color: #fff;
+}
+.dark-theme header {
+    background-color: #333;
+    color: #fff;
+   
+}
+.dark-theme .col-2{
+    background-color: #333;
+    color: #fff;
+  
+}
+.dark-theme .header-text h1 {
+    color: rgb(251, 251, 251);
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin: 1%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.dark-theme .header-content{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme #themeBtn {
+    background-color: #f3e11d;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.dark-theme .col-3{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-4{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-5{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-6{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .insta-name{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-7{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-8{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme .col-9{
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Drop down menun dark mode*/
+.dark-theme .dropdown a {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.dark-theme .dropdown a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #050505;
+}
+
+
+
+/* quiz sivun dark mode*/
+.dark-theme .quiz{
+    background-color: #333;
+    color: #fff;
+}
+.dark-theme form {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.dark-theme .quizSubmit {
+    background-color: #333;
+    color: #fff;
+
+}
+
+
+/*Galleryn dark mode*/
+.dark-theme .gallery{
+    background-color: #333;
+    color: #f9f8f8;
+    border: 2px solid #000000;
+}
+.dark-theme .gallery-item:hover{
+    background-color: #333;
+    color: #f9f8f8;
+    border: 2px solid #000000;
+}
+.dark-theme .clickkbtn {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #000000;
+}
+
+/*Etusivun dark mode*/
+
+.dark-theme .link a {
+    color: #100e57;
+}
+.dark-theme .insta-username {
+    color: #100e57;
+}
+
+/* Rotutaulu dark mode*/
+
+.dark-theme table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 60%;
+    width: 80%;
+    background-color: #333;
+}
+
+.dark-theme tr {
+    border: 1px solid #000000;
+    font-size: 0.8em;
+}
+
+.dark-theme tr:hover {
+    background-color: #f5f7f8;
+    color: #000000;
+}
+
+-dark -theme td {
+    border: 1px solid #fffefe;
+    padding: 5px;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+/* /////////////////////////////////////////////////////////////////*/
+/* for mobile phones: */
+
+@media (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /*Yleiset muotoilut mobile*/
+    .header {
+        width:100%;
+        width: 100%;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: #ebeef1;
+    }
+
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+
+    .col-4 img {
+        width: 100%;
+        height: auto;
+    }
+    .row {
+        display: block;
+    }
+    .row-2 {
+        display: block;
+    }
+
+    /*Etusivun muotoilut mobile */
+
+    .link {
+        list-style: none;
+        padding:0%;  
+    }
+    
+    .link a {
+        display: block;
+        padding: 1% 2%;
+        background-color: #f2f2f2;
+        margin: 5px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+    }
+    .link a:hover {
+        background-color: #ebeef1;
+        color: #000000;
+        border: 2px solid #050505;
+    }
+    .link-podcast{
+        list-style: none;
+        padding:0%;
+    
+    }
+    .link-podcast a{
+        background: none;
+        background-size: contain;
+        display: block;
+        padding: 1% 2%;
+        background-color: #f2f2f2;
+        margin: 5px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+    }
+    .link-podcast a:hover {
+        background-color: #ebeef1;
+        color: #000000;
+        border: 2px solid #050505;
+    }
+    
+    .insta-link {
+        text-align: left;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    
+    .insta-username {
+        font-size: 1em;
+        font-weight: bold;
+        color: #373535;
+        text-decoration: none;
+    }
+    
+    .insta-link a {
+        display: flex;
+        align-items: center; 
+        text-decoration: none;
+    }
+    .insta-link a:hover {
+        background-color: #ebeef1;
+    }
+    
+    .insta-link a::before {
+        content: ""; 
+        background: url('/assets/pictures/Instagram_Glyph_Gradient.png') no-repeat center center;
+        background-size: contain;
+        width: 30px; 
+        height: 30px; 
+        margin-right: 10px; 
+    }
+ 
+    /*Gallerian muotoilut mobile*/
+
+    .gallery {
+        display: block;
+    }
+
+    /* Visailun muotoilut mobile */
+
+    form {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 1em;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0%;
+        background-color: #fcfcfc;
+        border: 2px solid #0d0c0c;
+        text-align: left;
+    }
+    input[type="radio"]+label {
+        position: relative;
+        padding-left: 8%;
+        cursor: pointer;
+    }
+    .slider{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    
+    }
+    #resultImage{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    
+    
+  
+  
+ 
+  
+}
