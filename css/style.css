@@ -675,7 +675,7 @@ img{
         padding: 10px;
     }
 
-    /*Yleiset muotoilut*/
+    /*Yleiset muotoilut mobile*/
     .header {
         width:100%;
         width: 100%;
@@ -701,7 +701,7 @@ img{
         display: block;
     }
 
-    /*Etusivun muotoilut*/
+    /*Etusivun muotoilut mobile */
 
     .link {
         list-style: none;
@@ -775,15 +775,13 @@ img{
         margin-right: 10px; 
     }
  
-    
-
-
-
+    /*Gallerian muotoilut mobile*/
 
     .gallery {
         display: block;
     }
 
+    /* Visailun muotoilut mobile */
 
     form {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -791,7 +789,7 @@ img{
         max-width: 80%;
         margin: 0 auto;
         padding: 0%;
-        background-color: rgb(240, 244, 252);
+        background-color: #fcfcfc;
         border: 2px solid #0d0c0c;
         text-align: left;
     }
