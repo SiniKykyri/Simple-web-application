@@ -333,18 +333,47 @@ td {
 
 
 .link {
-    text-align: left;
-    margin: 1%;
-    margin-left: 10%;
-    font-size: 1.2em;
-    margin-bottom: 0;
+    list-style: none;
+    padding:0%;
+    
 }
 
 .link a {
-    color: #519bd8;
+    display: block;
+    padding: 1% 2%;
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    color: #333;
 }
+.link a:hover {
+    background-color: #ebeef1;
+    color: #000000;
+    border: 2px solid #050505;
+}
+.link-podcast{
+    list-style: none;
+    padding:0%;
+
+}
+.link-podcast a{
+    background: url('/assets/pictures/Spotify_Logo_RGB_Green.png') no-repeat left center;
+    background-size: contain;
+    display: block;
+    padding: 1% 2%;
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+.link-podcast a:hover {
+    background-color: #ebeef1;
+    color: #000000;
+    border: 2px solid #050505;
+}
+
 
 .insta-link {
     text-align: left;
@@ -364,9 +393,12 @@ td {
     align-items: center; 
     text-decoration: none;
 }
+.insta-link a:hover {
+    background-color: #ebeef1;
+}
 
 .insta-link a::before {
-    content: ""; /* Create a pseudo-element for the Instagram logo */
+    content: ""; 
     background: url('/assets/pictures/Instagram_Glyph_Gradient.png') no-repeat center center;
     background-size: contain;
     width: 30px; 
@@ -643,26 +675,7 @@ img{
         padding: 10px;
     }
 
-    .header-text h1 {
-        font-size: 2em;
-
-    }
-
-    .col-4 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .row {
-        display: block;
-    }
-
-    .row-2 {
-        display: block;
-    }
-    .gallery {
-        display: block;
-    }
+    /*Yleiset muotoilut*/
     .header {
         width:100%;
         width: 100%;
@@ -672,6 +685,105 @@ img{
         justify-content: center;
         background-color: #ebeef1;
     }
+
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+
+    .col-4 img {
+        width: 100%;
+        height: auto;
+    }
+    .row {
+        display: block;
+    }
+    .row-2 {
+        display: block;
+    }
+
+    /*Etusivun muotoilut*/
+
+    .link {
+        list-style: none;
+        padding:0%;  
+    }
+    
+    .link a {
+        display: block;
+        padding: 1% 2%;
+        background-color: #f2f2f2;
+        margin: 5px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+    }
+    .link a:hover {
+        background-color: #ebeef1;
+        color: #000000;
+        border: 2px solid #050505;
+    }
+    .link-podcast{
+        list-style: none;
+        padding:0%;
+    
+    }
+    .link-podcast a{
+        background: none;
+        background-size: contain;
+        display: block;
+        padding: 1% 2%;
+        background-color: #f2f2f2;
+        margin: 5px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+    }
+    .link-podcast a:hover {
+        background-color: #ebeef1;
+        color: #000000;
+        border: 2px solid #050505;
+    }
+    
+    .insta-link {
+        text-align: left;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    
+    .insta-username {
+        font-size: 1em;
+        font-weight: bold;
+        color: #373535;
+        text-decoration: none;
+    }
+    
+    .insta-link a {
+        display: flex;
+        align-items: center; 
+        text-decoration: none;
+    }
+    .insta-link a:hover {
+        background-color: #ebeef1;
+    }
+    
+    .insta-link a::before {
+        content: ""; 
+        background: url('/assets/pictures/Instagram_Glyph_Gradient.png') no-repeat center center;
+        background-size: contain;
+        width: 30px; 
+        height: 30px; 
+        margin-right: 10px; 
+    }
+ 
+    
+
+
+
+
+    .gallery {
+        display: block;
+    }
+
 
     form {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
