@@ -654,10 +654,34 @@ img{
 
 /* Rotutaulu dark mode*/
 
-.dark-theme .table {
+.dark-theme table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 60%;
+    width: 80%;
     background-color: #333;
-    color: #fff;
-    border: 2px solid #fff;
+}
+
+.dark-theme tr {
+    border: 1px solid #000000;
+    font-size: 0.8em;
+}
+
+.dark-theme tr:hover {
+    background-color: #f5f7f8;
+    color: #000000;
+}
+
+-dark -theme td {
+    border: 1px solid #fffefe;
+    padding: 5px;
 }
 
 /*////////////////////////////////////////////////////////////////////*/
@@ -805,6 +829,9 @@ img{
         justify-content: center;
     
     }
+
+    /* Rotutaulun muotoilut mobile */
+    
   
   
  
