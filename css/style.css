@@ -203,6 +203,11 @@ br {
 #quizResults{
     margin-top: 5%;
 }
+#resultImage{
+    width: 30%;
+    height: auto;
+    margin-bottom: 5%;
+}
 
 form {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -829,8 +834,13 @@ img{
         justify-content: center;
     
     }
+    #resultImage{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
 
-    /* Rotutaulun muotoilut mobile */
+    
     
   
   
