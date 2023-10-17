@@ -1,3 +1,5 @@
+
+// Haetaan CSV tiedosto ja luodaan siitä taulukko
 function fetchAndDisplayCSV() {
     fetch('assets/data/rodut.csv') 
         .then(response => response.text())
@@ -27,8 +29,10 @@ function fetchAndDisplayCSV() {
         });
 }
 
+// Kutsutaan functiota, jonka avulla haetaan CSV tiedosto ja luodaan siitä taulukko
 fetchAndDisplayCSV();
 
+// Refresh nappim function, joka poistaa taulukon ja luo sen uudelleen
 document.addEventListener('DOMContentLoaded', function() {
     
     const btn = document.getElementById("refreshBtn");
@@ -47,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// Suodatus function
 const filterInput = document.getElementById("filterInput");
 
 filterInput.addEventListener("input", function(){
@@ -66,7 +71,9 @@ filterInput.addEventListener("input", function(){
 
 })
 
+// Aakkosjärjestys funktio
 const sortBtn = document.getElementById("sortBtn");
+let sortOrder = 1;
 
 sortBtn.addEventListener("click", function(){
 
@@ -74,19 +81,26 @@ sortBtn.addEventListener("click", function(){
     const tbody = table.querySelector("tbody");
     const rows = Array.from(tbody.rows);
 
+    const headerRow = tbody.rows[0];
+
+    rows.shift();
+
     rows.sort(function (a, b) {
         const nameA = a.cells[0].textContent.trim().toUpperCase();
         const nameB = b.cells[0].textContent.trim().toUpperCase();
-        return nameA.localeCompare(nameB);
+        return sortOrder * nameA.localeCompare(nameB);
     });
 
     while (tbody.firstChild) {
         tbody.removeChild(tbody.firstChild);
     }
 
+    tbody.appendChild(headerRow);
+
     rows.forEach(function (row) {
         tbody.appendChild(row);
     });
+    sortOrder *= -1;
 
 
 });
