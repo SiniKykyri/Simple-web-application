@@ -186,6 +186,21 @@ br {
     background-color: rgb(183, 205, 222);
     font-size:0.8em;
 }
+#Submit:hover {
+    background-color: rgb(123, 129, 133);
+}
+#Reset{
+    padding: 1% 2%;
+    border: none;
+    cursor:pointer;
+    margin: 0%;
+    background-color: rgb(183, 205, 222);
+    font-size:0.8em;
+}
+#Reset:hover {
+    background-color: rgb(123, 129, 133);
+}
+
 .material-icons {
     vertical-align: middle;
     margin: 0;
@@ -193,9 +208,7 @@ br {
     font-size: 1.5em;
 
 }
-#Submit:hover {
-    background-color: rgb(123, 129, 133);
-}
+
 
 #quizResults{
     margin-top: 5%;

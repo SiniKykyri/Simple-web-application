@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const submitButton = document.getElementById("Submit");
     submitButton.addEventListener("click", calculateResults);
 
+    
+
     const correctAnswers = {
         luovutus: "8",
         montako: "2",
@@ -16,15 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
         parent.appendChild(img);
     }
 
+    
     function calculateResults() {
         const form = document.querySelector("form");
         const resultsContainer = document.getElementById("quizResults");
         let score = 0;
 
+        /*Tarkistetaan vastaukset*/
         for (const question in correctAnswers) {
             const selectedOption = form[question].value;
             const isCorrect = selectedOption === correctAnswers[question];
-
+        
+        /*Oikein/väärin ikonit*/
             const icon = document.getElementById(`${question}-icon`);
             icon.classList.remove("fa-times-circle,fa-check-circle");
             icon.classList.add(isCorrect ? "fa-check-circle":"fa-times-circle");
@@ -32,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if(isCorrect) {
                 score++;
             }
+            
         }
-
-     
+        submitButton.removeEventListener("click", calculateResults);
         
-
+        /*Logiikka pisteytykseen ja kuvan näyttämiseen*/
         if (score === 0) {
             resultsContainer.innerHTML += ` Pisteesi ovat: ${score} / ${Object.keys(correctAnswers).length}<br>`;
             resultsContainer.innerHTML += "Höh! Et saanut ainuttakaan pistettä. Kokeilehan uudestaan!<br>";
@@ -53,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
             resultsContainer.innerHTML += ` Pisteesi ovat: ${score} / ${Object.keys(correctAnswers).length}<br>`;
             resultsContainer.innerHTML += "Sait kaksi pistettä. Jippii!<br>";
             createImage("assets/pictures/happy.jpg", resultsContainer);
-
             return;
         }
         else if (score === 3) {
@@ -62,10 +66,23 @@ document.addEventListener('DOMContentLoaded', function () {
             createImage("assets/pictures/winner.jpg", resultsContainer);
             return;
         }
+        
+       
+      
+       
+        
     
-
        
 
     }
+     /*Reset nappula*/
+
+     const resetButton = document.getElementById("Reset");
+     resetButton.addEventListener("click", resetQuiz);
+
+     function resetQuiz() {
+         
+         location.reload();
+     }
     
 });
