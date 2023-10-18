@@ -38,10 +38,7 @@ h3 {
     margin-bottom: 0;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 10%;
-}
+
 br {
     margin-top: 10px;
 }
@@ -253,7 +250,7 @@ input[type="radio"] {
 
 }
 
-/* Taulukon muotoilut */ 
+/* rotutaulu html muotoilut */ 
 
 table {
     border-collapse: collapse;
@@ -334,6 +331,27 @@ td {
 
 }
 
+.col-4 ul{
+    margin: 5%;
+    padding: 0%;
+   
+}
+.col-4 ul li{
+    list-style: none;
+    margin: 5% 0;
+    position: relative;
+}
+.col-5 #breedLabbisImg{
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
 /*Etusivun muotoilut */
 
 
@@ -381,25 +399,25 @@ td {
 
 
 .insta-link {
-    text-align: left;
-    margin-left: 20%;
-    margin-top: 5%;
+    margin: 5px 0;
+    padding: 0%;
 }
 
 .insta-username {
-    font-size: 1em;
-    font-weight: bold;
-    color: #373535;
+    color: #333;
     text-decoration: none;
 }
 
 .insta-link a {
     display: flex;
-    align-items: center; 
+    padding: 1% 2%;
     text-decoration: none;
+    background-color: #f2f2f2;
 }
 .insta-link a:hover {
     background-color: #ebeef1;
+    color: #000000;
+    border: 2px solid #050505;
 }
 
 .insta-link a::before {
@@ -408,7 +426,7 @@ td {
     background-size: contain;
     width: 30px; 
     height: 30px; 
-    margin-right: 10px; 
+    margin-right: 3%; 
 }
 
 .slider{
@@ -840,7 +858,15 @@ img{
         margin-bottom: 5%;
     }
 
+    /*Rotutaulu html muotoilut*/
+
+    .col-5 #breedLabbisImg{
+        padding: 0%;
+        width: 100%;
+        height: auto;
     
+        
+    }
     
   
   
