@@ -20,7 +20,7 @@ Olen käyttänyt CSS koodissani, niin luokkaa kuin ID:tä muokatakseni elementti
 ### Responsive Desing
 Olen pyrkinyt tekemään sivuni mahdollisimman hyvin skaalautuvaksi, niin pienille kuin suurille näytöille. Selaimista parhaiten toimii chrome. Löydät tähän liittyvät koodit CS tiedoston loppupäästä. 
 ### Flexbox and Grid
-Esimerkki Gridin käytöstä löytyy gallery luokasta. (rivi 137) ja esimerkki flexboxin käytöstä löytyy header luokan muotoiluista. (rivi 42).
+Esimerkki Gridin käytöstä löytyy gallery luokasta. (rivi 120) ja esimerkki flexboxin käytöstä löytyy header luokan muotoiluista. (rivi 51).
 ### Layot principles, aesthetics and user experience
 Olen pyrkinyt luomaan sivun mahdollisimman käyttäjä ystävälliseksi sekä mielyttävän näköiseksi. 
 
@@ -44,7 +44,7 @@ Timerin löydät imageScript.js tiedostosta. Timerin avulla säädetään aikaa 
 ### Fetch
 Käytän Fetch functiota datan hakemiseen. Data on tässä tapauksessa projektin sisällä, mutta voisi ihan hyvin olla jonkun Apin tarjoamana. JS koodit löydät tiedostosta dataScript.cs ja HTML koodit rotutaulu.html. 
 ### Asynchronous calls
-Tämä kriteeri täyttyy, kun rotutaulukko näkyy sivulla. Sivulla on myös päivitys nappi, jossa datahaetaan uudestaan päivittämättä koko sivua. Löydät koodit rotutaulu.html ja dataScript.js tiedostoista. 
+Tämä kriteeri täyttyy, kun rotutaulukko näkyy sivulla. Sivulla on myös päivitys nappi, jossa datahaetaan uudestaan päivittämättä koko sivua. Löydät koodit rotutaulu.html ja dataScript.js tiedostoista. Myös tietovisassa on ominaisuus, jolla pelin tuloksen voi nollata nappia painamalla.
 
 ### Effictive use of asynchronous data
 Taulukosta löytyvät suodatus(filtering), että järjestely(sorting) ominaisuudet. Hakukentän avulla voit etsiä koirarotua nimellä. Nappia painamalla saat koirarodut järjestettyä aakkosjärjestykseen. Nappia uudestaan painamalla saat käänteisen järjestyksen. 
