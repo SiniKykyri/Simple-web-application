@@ -3,11 +3,9 @@ const themeToggle = document.getElementById('themeBtn');
 
 function toggleDarkTheme() {
     document.body.classList.toggle('dark-theme');
+    const icons = document.querySelectorAll('#themeBtn .material-icons');
 
-
-const icons = document.querySelectorAll('#themeBtn .material-icons');
-
-icons.forEach(icon => {
+    icons.forEach(icon => {
     if(document.body.classList.contains('dark-theme')) {
         icon.textContent = 'light_mode';
         document.cookie = "theme=dark";  
@@ -18,7 +16,7 @@ icons.forEach(icon => {
     }
 });
 }
-
+//Tarkistetaan onko käytössä tumma teema
 function checkThemePreference(){
     const themeCookie = document.cookie.split(';').find(cookie => cookie.startsWith('theme='));
     if(themeCookie) {
@@ -29,7 +27,6 @@ function checkThemePreference(){
     }
 }
 document.addEventListener('DOMContentLoaded', checkThemePreference);
-
 themeToggle.addEventListener('click', toggleDarkTheme);
 
 

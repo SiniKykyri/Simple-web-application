@@ -2,15 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const submitButton = document.getElementById("Submit");
     submitButton.addEventListener("click", calculateResults);
-
-    
-
     const correctAnswers = {
         luovutus: "8",
         montako: "2",
         kauanko: "2"
     };
-
+    /*Funktio kuvan luomiseen*/
     function createImage(src, parent) {
         const img = document.createElement("img");
         img.src = src;
@@ -18,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
         parent.appendChild(img);
     }
 
-    
     function calculateResults() {
         const form = document.querySelector("form");
         const resultsContainer = document.getElementById("quizResults");
@@ -28,19 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
         for (const question in correctAnswers) {
             const selectedOption = form[question].value;
             const isCorrect = selectedOption === correctAnswers[question];
-        
-        /*Oikein/väärin ikonit*/
+
+            /*Oikein/väärin ikonit*/
             const icon = document.getElementById(`${question}-icon`);
             icon.classList.remove("fa-times-circle,fa-check-circle");
-            icon.classList.add(isCorrect ? "fa-check-circle":"fa-times-circle");
+            icon.classList.add(isCorrect ? "fa-check-circle" : "fa-times-circle");
             icon.style.color = isCorrect ? "green" : "red";
-            if(isCorrect) {
+            if (isCorrect) {
                 score++;
             }
-            
         }
         submitButton.removeEventListener("click", calculateResults);
-        
+
         /*Logiikka pisteytykseen ja kuvan näyttämiseen*/
         if (score === 0) {
             resultsContainer.innerHTML += ` Pisteesi ovat: ${score} / ${Object.keys(correctAnswers).length}<br>`;
@@ -66,23 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
             createImage("assets/pictures/winner.jpg", resultsContainer);
             return;
         }
-        
-       
-      
-       
-        
-    
-       
-
     }
-     /*Reset nappula*/
-
-     const resetButton = document.getElementById("Reset");
-     resetButton.addEventListener("click", resetQuiz);
-
-     function resetQuiz() {
-         
-         location.reload();
-     }
-    
+    /*Reset nappula*/
+    const resetButton = document.getElementById("Reset");
+    resetButton.addEventListener("click", resetQuiz);
+    function resetQuiz() {
+        location.reload();
+    }
 });

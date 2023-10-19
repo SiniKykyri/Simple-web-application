@@ -563,8 +563,6 @@ img{
     clear: both;
     display: table;
 }
-
-
 /*//////////////// Yleiset Dark theme koodit ///////////////////////*/
 .dark-theme {
     --background-color: #333;
@@ -720,10 +718,6 @@ img{
     padding: 5px;
 }
 
-/*////////////////////////////////////////////////////////////////////*/
-
-
-
 /* /////////////////////////////////////////////////////////////////*/
 /* for mobile phones: */
 
@@ -805,25 +799,25 @@ img{
     }
     
     .insta-link {
-        text-align: left;
-        margin-left: 20%;
-        margin-top: 5%;
+        margin: 5px 0;
+        padding: 0%;
     }
     
     .insta-username {
-        font-size: 1em;
-        font-weight: bold;
-        color: #373535;
+        color: #333;
         text-decoration: none;
     }
     
     .insta-link a {
         display: flex;
-        align-items: center; 
+        padding: 1% 2%;
         text-decoration: none;
+        background-color: #f2f2f2;
     }
     .insta-link a:hover {
         background-color: #ebeef1;
+        color: #000000;
+        border: 2px solid #050505;
     }
     
     .insta-link a::before {
@@ -832,7 +826,7 @@ img{
         background-size: contain;
         width: 30px; 
         height: 30px; 
-        margin-right: 10px; 
+        margin-right: 3%; 
     }
  
     /*Gallerian muotoilut mobile*/
