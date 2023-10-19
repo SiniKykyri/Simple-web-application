@@ -6,7 +6,7 @@ Tämä on nähtävissä kaikissa HTML tiedostoissa.
 ### HTML Elements
 Tämä myös nähtävissä kaikissa HTML tiedostoissa. 
 ### Forms, links and media
-Lomakke löytyy quiz.html tiedostosta, linkkejä löytyy index.html tiedostosta ja kuvia eli mediaa sieltä sun täältä. 
+Lomakke löytyy quiz.html tiedostosta, linkkejä löytyy index.html tiedostosta ja mediaa eli tässä tapauksessa kuvia löytyy esimerkiksi gallery.html tiedostosta. 
 ### Tables
 Taulukko löytyy rotutaulu.html tiedostosta. 
 ### semantic HTML
@@ -18,11 +18,11 @@ Löydät CSS tiedostoni nimellä style.css. Se sisältää CSS perus muotoilut.
 ### Classes and IDs
 Olen käyttänyt CSS koodissani, niin luokkaa kuin ID:tä muokatakseni elementtien ulkoasua.
 ### Responsive Desing
-Olen pyrkinyt tekemään sivuni mahdollisimman hyvin skaalautuvaksi, niin pienille kuin suurille näytöille. Löydät tähän liittyvät koodit CS tiedoston loppupäästä. 
+Olen pyrkinyt tekemään sivuni mahdollisimman hyvin skaalautuvaksi, niin pienille kuin suurille näytöille. Selaimista parhaiten toimii chrome. Löydät tähän liittyvät koodit CS tiedoston loppupäästä. 
 ### Flexbox and Grid
 Esimerkki Gridin käytöstä löytyy gallery luokasta. (rivi 137) ja esimerkki flexboxin käytöstä löytyy header luokan muotoiluista. (rivi 42).
 ### Layot principles, aesthetics and user experience
-??? Tähän vielä pitää keksiä jotain
+Olen pyrkinyt luomaan sivun mahdollisimman käyttäjä ystävälliseksi sekä mielyttävän näköiseksi. 
 
 
 ## JavaScipt
@@ -32,11 +32,11 @@ Esimerkin yksinkertaisesta napin painalluksesta löydät gallery.html ja btnScri
 ### Event listeners and DOM manipulations
 Jokaisessa JavaScript tiedostossa on yksi tai useampi Event Listener, mutta paras esimerkki löytyy dataScript.js tiedostossa, jossa nappia päivitys nappia painamalla poistetaan vanha taulukko ja luodaan uusi taulukko päivitetyllä datalla.
 ### Use of arrays, objects and functions
-Esimerkki, jossa käytetään kaikkia näistä löytyy quiz.js tiedostosta. 
+Esimerkki, jossa käytetään kaikkia näistä löytyy quiz.js tiedostosta eli tietovisan scriptistä.
 ### Advanced logic, Looping through data and dynamic DOM updates
 Nämä löydät dataScript.js tiedostosta.
 ### Consistent use of Objected-Oriented JS principles
-???? Ei löydy vielä mistään!!
+En ole sisältänyt työhöni Olio ohjelmointia. 
 
 ## Asynchronous Operations
 ### Timer
